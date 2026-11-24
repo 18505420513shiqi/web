@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>十七 · 个人网站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="brand">十七</p>
+      <h1 class="headline">你好，这里是我的个人小站</h1>
+      <p class="tagline">产品经理 · 一个能算数的角落</p>
+    </header>
+
+    <main>
+      <section class="calculator-section" aria-labelledby="calc-title">
+        <h2 id="calc-title">计算器</h2>
+        <p class="section-desc">加减乘除，点一点就算完</p>
+
+        <div class="calculator" role="application" aria-label="简易计算器">
+          <div class="display" id="display" aria-live="polite">0</div>
+          <div class="keys">
+            <button type="button" class="key key-fn" data-action="clear">AC</button>
+            <button type="button" class="key key-fn" data-action="sign">±</button>
+            <button type="button" class="key key-fn" data-action="percent">%</button>
+            <button type="button" class="key key-op" data-action="operator" data-value="/">÷</button>
+
+            <button type="button" class="key" data-action="digit" data-value="7">7</button>
+            <button type="button" class="key" data-action="digit" data-value="8">8</button>
+            <button type="button" class="key" data-action="digit" data-value="9">9</button>
+            <button type="button" class="key key-op" data-action="operator" data-value="*">×</button>
+
+            <button type="button" class="key" data-action="digit" data-value="4">4</button>
+            <button type="button" class="key" data-action="digit" data-value="5">5</button>
+            <button type="button" class="key" data-action="digit" data-value="6">6</button>
+            <button type="button" class="key key-op" data-action="operator" data-value="-">−</button>
+
+            <button type="button" class="key" data-action="digit" data-value="1">1</button>
+            <button type="button" class="key" data-action="digit" data-value="2">2</button>
+            <button type="button" class="key" data-action="digit" data-value="3">3</button>
+            <button type="button" class="key key-op" data-action="operator" data-value="+">+</button>
+
+            <button type="button" class="key key-zero" data-action="digit" data-value="0">0</button>
+            <button type="button" class="key" data-action="decimal">.</button>
+            <button type="button" class="key key-eq" data-action="equals">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 十七</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
