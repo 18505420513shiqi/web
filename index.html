@@ -58,6 +58,39 @@
     </footer>
   </div>
 
+  <aside class="tetris-widget" id="tetris-widget" aria-label="俄罗斯方块">
+    <button type="button" class="tetris-toggle" id="tetris-toggle" aria-expanded="true" aria-controls="tetris-panel">
+      <span class="tetris-toggle-icon" aria-hidden="true">▣</span>
+      <span>方块</span>
+    </button>
+    <div class="tetris-panel" id="tetris-panel">
+      <div class="tetris-top">
+        <p class="tetris-title">俄罗斯方块</p>
+        <div class="tetris-meta">
+          <span>分 <strong id="tetris-score">0</strong></span>
+          <span>行 <strong id="tetris-lines">0</strong></span>
+        </div>
+      </div>
+      <canvas id="tetris-canvas" width="200" height="400" aria-label="游戏画布"></canvas>
+      <div class="tetris-hint" id="tetris-hint">方向键移动 · 上键旋转 · 空格下落</div>
+      <div class="tetris-controls" aria-hidden="true">
+        <button type="button" class="tetris-btn" data-tetris="left">←</button>
+        <button type="button" class="tetris-btn" data-tetris="down">↓</button>
+        <button type="button" class="tetris-btn" data-tetris="right">→</button>
+        <button type="button" class="tetris-btn" data-tetris="rotate">↻</button>
+        <button type="button" class="tetris-btn tetris-btn-drop" data-tetris="drop">落</button>
+      </div>
+      <div class="tetris-actions">
+        <button type="button" class="tetris-action" id="tetris-start">开始</button>
+        <button type="button" class="tetris-action" id="tetris-pause" disabled>暂停</button>
+      </div>
+      <div class="tetris-overlay" id="tetris-overlay">
+        <p id="tetris-overlay-text">准备好了？</p>
+      </div>
+    </div>
+  </aside>
+
   <script src="script.js"></script>
+  <script src="tetris.js"></script>
 </body>
 </html>
